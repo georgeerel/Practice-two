@@ -1,15 +1,18 @@
 public class Elevator {
-    public boolean isAtTop() {
+    private double Speed=0;
+    private String Name;
+    private double height;
+    private boolean isAtTop = false;
+    private boolean isAtBottom = false;
+    public boolean isAtTop(boolean) {
         return false ;
     }
     public boolean isAtBottom(){
         return false;
     }
-    public void goToTop(){
+    public void GoTo(){
 
     }
-    public void goToBottom(){
-
     }
     public boolean isAtTarget(){
         return false;
