@@ -17,7 +17,5 @@ public class Elevator {
     public boolean isAtTarget(){
         return false;
     }
-
-
-
 }
+
