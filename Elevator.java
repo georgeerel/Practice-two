@@ -1,10 +1,10 @@
 public class Elevator {
-        private String Name;
-        private double Speed;
         private double Height;
         private double TargetHeight;
-        private double MaxHeight;
+        private double MaxHeight;    
         private double MinHeight;
+        private String Name;
+        private double Speed;
 
     public Elevator(String name, double maxHeight, double minHeigh, double CurrentHeight, double targetheight) {
         this.Name = name;
@@ -30,17 +30,13 @@ public class Elevator {
     }
     public void goToTop(){
         while (isAtTop(Height) == false) {
-            Speed=1;
+            Speed = 1;
         }
-
-
     }
     public void goToBottom(){
         while (isAtBottom(Height)== false){
-            Speed=-1;
+            Speed = -1;
         }
-
-
     }
     public boolean isAtTarget(){
         if (Height == TargetHeight){
@@ -49,6 +45,12 @@ public class Elevator {
         else{
             return false;
         }
+    }
+    public String getName() {
+        return Name;
+    }
+    public Double getSpees(){
+        return Speed;
     }
 }
 
